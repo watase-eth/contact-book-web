@@ -1,8 +1,9 @@
 .container {
-  width: 100%;
-  max-width: 1440px;
-  padding: 0 1rem;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .gradientText0 {
@@ -142,4 +143,123 @@
 }
 .logo img {
   filter: invert(1);
+}
+
+.addressContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  border: #555 solid 1px;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 40%;
+}
+.addressHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: #555 solid 1px;
+}
+
+.addressListContainer {
+  width: 100%;
+}
+.addressListHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.addContactContainer {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #00000080;
+}
+.addContactCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #131313;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 30%;
+  height: 40%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.addContactTriggerButton {
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+.closeButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.addContactForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+}
+.addContactForm input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: #555 solid 1px;
+}
+.addContactButton {
+  position: absolute !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  margin: 1rem !important;
+  cursor: pointer !important;
+}
+
+.contactCardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  background-color: #131313;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  height: 20%;
+  margin-bottom: 10px;
+}
+.contactCardInfo p {
+  font-size: 0.75rem;
+}
+.removeContactButton {
+  min-width: 32px !important;
+  min-height: 24px !important;
+  cursor: pointer !important;
+  padding: 0.5rem !important;
+  border-radius: 5px !important;
+  background-color: lightcoral !important;
+  color: #fff !important;
+  border: none !important;
+  margin-left: 1rem !important;
 }
