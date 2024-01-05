@@ -79,12 +79,6 @@ export default function CreateBounty() {
                 value={amount}
                 onChange={(e) => setamount(e.target.value)}
               />
-              <input
-                type="text"
-                placeholder="Gas"
-                value={setcreateBounty}
-                onChange={(e) => setcreateBounty(e.target.value)}
-              />
             </div>
             <Web3Button
               contractAddress={CONTRACT_ADDRESS}
@@ -101,6 +95,7 @@ export default function CreateBounty() {
               }
               onSuccess={() => {
                 resetForm();
+                setcreateBounty(false);
               }}
             >
               Create Bounty
