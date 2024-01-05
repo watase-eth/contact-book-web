@@ -90,7 +90,6 @@ export default function CreateBounty() {
                   flag,
                   locked,
                   amount,
-                  bounty,
                 ])
               }
               onSuccess={() => {
