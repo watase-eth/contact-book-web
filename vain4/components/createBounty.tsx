@@ -59,31 +59,31 @@ export default function CreateBounty() {
                 type="text"
                 placeholder="N Leading0s"
                 value={nLeading0s}
-                onChange={(e) => setCustom(e.target.value)}
+                onChange={(e) => setnLeading0s(e.target.value)}
               />
               <input
                 type="text"
                 placeholder="Flag"
                 value={flag}
-                onChange={(e) => setCustom(e.target.value)}
+                onChange={(e) => setflag(e.target.value)}
               />
               <input
                 type="text"
                 placeholder="Locked"
                 value={locked}
-                onChange={(e) => setCustom(e.target.value)}
+                onChange={(e) => setlocked(e.target.value)}
               />
               <input
                 type="text"
                 placeholder="Amount of Scry"
                 value={amount}
-                onChange={(e) => setCustom(e.target.value)}
+                onChange={(e) => setamount(e.target.value)}
               />
               <input
                 type="text"
                 placeholder="Gas"
                 value={setcreateBounty}
-                onChange={(e) => setCustom(e.target.value)}
+                onChange={(e) => setcreateBounty(e.target.value)}
               />
             </div>
             <Web3Button

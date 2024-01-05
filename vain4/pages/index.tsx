@@ -2,8 +2,6 @@ import { ConnectWallet, useAddress } from "@thirdweb-dev/react";
 import styles from "../styles/Home.module.css";
 import { NextPage } from "next";
 import AddContact from "../components/createBounty";
-import ContactList from "../components/contact-list";
-import Bounties from "../components/bounties";
 
 const Home: NextPage = () => {
   const address = useAddress();
