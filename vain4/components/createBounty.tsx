@@ -2,7 +2,6 @@ import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import { Web3Button } from "@thirdweb-dev/react";
 import { CONTRACT_ADDRESS } from "../const/addresses";
-import { useContract, useContractWrite } from "@thirdweb-dev/react";
 
 export default function CreateBounty() {
   const [createBounty, setcreateBounty] = useState(false);

@@ -19,7 +19,6 @@ const Home: NextPage = () => {
               <h3>Let's Go!:</h3>
               <AddContact />
             </div>
-            <bounties />
           </div>
         )}
       </div>
