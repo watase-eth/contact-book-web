@@ -91,7 +91,7 @@ export default function CreateBounty() {
                 action={async (contract) => {
                   const spenderAddress =
                     "0x000000000001F04A9533e92d7AD4dDe7DC19a8F3";
-                  const amount = 10000;
+                  const amount = 1000000000000000000;
                   await contract.erc20.setAllowance(spenderAddress, amount);
                   alert("Scry Approved for Vain");
                 }}
