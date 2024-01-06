@@ -6,7 +6,7 @@ import { CONTRACT_ADDRESS } from "../const/addresses";
 export default function CreateBounty() {
   const [createBounty, setcreateBounty] = useState(false);
   const [pubkey, setPubkey] = useState("");
-  const [Custom, setCustom] = useState("");
+  const [custom, setcustom] = useState("");
   const [nLeading0s, setnLeading0s] = useState("");
   const [flag, setflag] = useState("");
   const [locked, setlocked] = useState("");
@@ -14,7 +14,7 @@ export default function CreateBounty() {
 
   function resetForm() {
     setPubkey("");
-    setCustom("");
+    setcustom("");
     setnLeading0s("");
     setflag("");
     setlocked("");
@@ -50,8 +50,8 @@ export default function CreateBounty() {
               <input
                 type="text"
                 placeholder="Custom ex.0x1337"
-                value={Custom}
-                onChange={(e) => setCustom(e.target.value)}
+                value={custom}
+                onChange={(e) => setcustom(e.target.value)}
               />
               <input
                 type="text"
@@ -105,7 +105,7 @@ export default function CreateBounty() {
               action={(contract) =>
                 contract.call("createBounty", [
                   pubkey,
-                  Custom,
+                  custom,
                   nLeading0s,
                   flag,
                   locked,
