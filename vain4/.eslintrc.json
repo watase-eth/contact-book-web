@@ -1,0 +1,11 @@
+{
+  "extends": "next",
+  "settings": {
+    "next": {
+      "rootDir": "Vain-Vanity-V1.2-beta/vain4/"
+    }
+  }
+}
+{
+  "rules": { "react/no-unescaped-entities": 0 }
+}
