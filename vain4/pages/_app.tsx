@@ -9,7 +9,10 @@ const activeChain = "optimism";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThirdwebProvider activeChain={activeChain}>
+    <ThirdwebProvider
+      clientId={process.env.TW_SECRET_KEY}
+      activeChain={activeChain}
+    >
       <Component {...pageProps} />
     </ThirdwebProvider>
   );
