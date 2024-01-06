@@ -1,7 +1,7 @@
 import { ConnectWallet, useAddress } from "@thirdweb-dev/react";
 import styles from "../styles/Home.module.css";
 import { NextPage } from "next";
-import AddContact from "../components/createBounty";
+import CreateBounty from "../components/createBounty";
 
 const Home: NextPage = () => {
   const address = useAddress();
@@ -16,8 +16,16 @@ const Home: NextPage = () => {
         {address && (
           <div className={styles.addressListContainer}>
             <div className={styles.addressListHeader}>
-              <h3>Let's Go!:</h3>
-              <AddContact />
+              <h3>Let's Go! :</h3>
+              <p>Create PubKey Here</p>
+              <a
+                href="https://codepen.io/Pro-Pro-the-scripter/pen/zYyyNbJ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Create PubKey
+              </a>
+              <CreateBounty />
             </div>
           </div>
         )}

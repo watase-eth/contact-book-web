@@ -13,7 +13,6 @@ export default function CreateBounty() {
   const [amount, setamount] = useState("");
 
   function resetForm() {
-    setcreateBounty("");
     setPubkey("");
     setCustom("");
     setnLeading0s("");
